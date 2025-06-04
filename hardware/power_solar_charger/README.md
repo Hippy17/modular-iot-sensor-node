@@ -5,7 +5,7 @@ This is the power charging submodule of the **Modular IoT Sensor Node**, designe
 ## Features
 
 - Charges 3.7V Li-ion/LiPo batteries from a solar panel (4.5–6V)
-- Current-limited charging via external resistor
+- Current-limited charging via an external resistor
 - Visual indicators for charging and charge completion
 - Compact and easy to integrate into larger sensor systems
 
@@ -17,7 +17,7 @@ This is the power charging submodule of the **Modular IoT Sensor Node**, designe
 |-----------------------------|-------------------------------------------|
 | `SolarCharger.SchDoc`       | Altium schematic of the module            |
 | `SolarCharger.PcbDoc`       | Altium PCB layout                         |
-| `images/schematic_preview.png` | Schematic preview image    |
+| `Schematic_preview.png` | Schematic preview image    |
 | `project_outputs/`          | Gerber, drill files, BOM, etc.            |
 
 ---
