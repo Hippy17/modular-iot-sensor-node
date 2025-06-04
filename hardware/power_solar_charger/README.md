@@ -15,8 +15,8 @@ This is the power charging submodule of the **Modular IoT Sensor Node**, designe
 
 | File Name                    | Description                               |
 |-----------------------------|-------------------------------------------|
-| `SolarCharger.SchDoc`       | Altium schematic of the module            |
-| `SolarCharger.PcbDoc`       | Altium PCB layout                         |
+| `Solar Battery Charger.SchDoc`       | Altium schematic of the module            |
+| `Solar Battery Charger.PcbDoc`       | Altium PCB layout                         |
 | `Schematic_preview.png` | Schematic preview image    |
 | `project_outputs/`          | Gerber, drill files, BOM, etc.            |
 
