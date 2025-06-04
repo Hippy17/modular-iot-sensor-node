@@ -33,7 +33,7 @@ Key components and functionality:
 - **C1, C2**: Input/output smoothing capacitors
 - **P1, P2**: Solar panel input & battery connector
 
-![Schematic](images/schematic_preview.png)
+![Schematic](schematic_preview.png)
 
 > You can adjust charging current by changing R2 (R2 = 1800/ I(charging))
 
