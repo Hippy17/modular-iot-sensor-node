@@ -1,89 +1,70 @@
-# modular-iot-sensor-node
-Modular IoT node with solar-powered LiPo battery, ESP32, and environmental sensors
- Modular IoT Sensor Node  
-**Solar-Powered | ESP32-Based | Environmental Monitoring**
+Solar-Powered | ESP32-Based | Environmental Monitoring
 
-This is a personal hardware design project aimed at building a compact, solar-powered, low-power IoT node for environmental sensing. Designed in **Altium Designer**, the node is modular, field-deployable, and built around the ESP32, capable of running on solar energy with LiPo battery backup.
+A compact, modular, and field-deployable IoT node designed for solar-powered environmental monitoring. The system uses the MCP73871 for intelligent power path management between USB, solar, and LiPo battery sources. Designed in Altium Designer, this project showcases low-power design, modular sensor interfaces, and real-world PCB engineering for IoT applications.
 
----
+🚀 Project Objectives
+✅ Design a professional-grade PCB in Altium Designer
 
-## Project Goals
+✅ Learn and apply low-power and energy-harvesting design techniques
 
-- ✅ Build a **professional-grade PCB** in Altium Designer
-- ✅ Learn to design for **low-power and renewable energy use**
-- ✅ Enable modular plug-and-play **sensor support (I²C)**
-- ✅ Document the project thoroughly for my **portfolio & GitHub**
+✅ Implement plug-and-play I²C sensor modularity
 
----
+✅ Create a clean, well-documented project suitable for portfolio and collaboration
 
-## Power Architecture
+⚡ Power Architecture
+MCP73871 handles simultaneous USB and solar charging, with:
 
-The device uses a hybrid power design:
-- **Solar charging** via CN3065
-- **USB charging & protection** via TP4056
-- **3.7V LiPo battery** with 3.3V LDO regulation (AP2112K)
-- Battery voltage monitored via ADC
-- Designed for **deep sleep** to extend runtime
+Power-path management between input, battery, and system load
 
----
+Autonomous selection of input source (USB or solar)
 
-## Core Components
+Battery charging with thermal regulation
 
-| Component     | Description                              |
-|---------------|------------------------------------------|
-| **ESP32-WROOM** | Main MCU with Wi-Fi + BLE               |
-| **BME280**     | Temp, humidity, and pressure sensor     |
-| **TSL2561**    | Light intensity sensor (Lux)            |
-| **CCS811**     | Air quality sensor (eCO₂ & TVOC)        |
-| **PIR**        | Motion detection                        |
-| **AP2112K**    | 3.3V LDO Regulator                      |
-| **CN3065**     | Solar Li-ion battery charger            |
-| **TP4056**     | USB charging + protection               |
+Status monitoring (charging, power source, fault)
 
----
+3.7V LiPo battery with system regulated to 3.3V via AP2112K LDO
 
-## Project Status
+Battery voltage monitoring via voltage divider + ADC input
 
-| Task                        | Status          |
-|-----------------------------|-----------------|
-| Altium schematic design     | 🟡 In progress  |
-| PCB layout                  | 🔜 Coming soon  |
-| Firmware testing            | 🔜 Coming soon  |
-| Sleep current optimization  | 🔜 Coming soon  |
-| GitHub documentation        | 🟡 Ongoing      |
+ESP32 deep sleep modes used to optimize power draw
 
----
+🧠 Core Components
+Component	Description
+ESP32-WROOM	MCU with integrated Wi-Fi + BLE
+BME280	Temperature, humidity, pressure sensor
+TSL2561	Ambient light sensor (Lux)
+CCS811	Air quality sensor (eCO₂ & TVOC)
+PIR Sensor	Motion detection
+AP2112K	3.3V Low Dropout Regulator
+MCP73871	Smart battery charger with power-path
 
-## Tools Used
+🛠️ Project Status
+Task	Status
+✅ Schematic design (Altium)	Completed
+✅ PCB layout (Altium)	Finalized
+✅ Sensor integration	Completed
+🔄 Firmware development	In progress
+🔄 Power testing & tuning	In progress
+📝 Documentation	Ongoing
 
-- **Altium Designer** (schematic + PCB design)
-- **ESP32 + Arduino IDE**
-- **DC bench supply + multimeter** for testing
-- **Datasheets + application notes** for all ICs
+🔧 Tools & Resources
+Altium Designer – Schematic and PCB layout
 
----
+Arduino IDE – Firmware development (ESP32 core)
 
-## What I'm Learning
+Multimeter, DC supply – Hardware validation
 
-This project is part of my self-driven learning path to become a better hardware engineer. Through it, I'm gaining hands-on experience in:
+Datasheets + Reference designs – Component integration
 
-- LiPo charging and protection circuits
-- Efficient power rail design
-- Sensor interfacing and PCB routing
-- Sleep modes and power budgeting
-- Documenting real-world hardware projects
+📘 Learning Outcomes
+Through this project, I’ve explored:
 
----
+Smart LiPo charging + power management (MCP73871)
 
-## Let's Collaborate or Talk
+Deep sleep strategies on ESP32
 
-I’m always happy to connect with other makers, engineers, and potential collaborators. If you’re interested in:
+Clean and compact PCB routing for sensor-based systems
 
-- Reviewing the schematics
-- Suggesting improvements
-- Forking the project or adapting it
-- Offering feedback on documentation or layout
+Building modular I²C headers for sensor extensibility
 
-Feel free to open an issue or reach out!
-
----
+Real-world prototyping, debugging, and documentation
